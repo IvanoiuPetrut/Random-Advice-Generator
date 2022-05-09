@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem hsla(150, 100%, 66%, 0.2);
+}
+
 html,
 body {
   height: 100vh;
@@ -59,6 +64,7 @@ body {
   padding: 3.2rem;
   border-radius: 11px;
   background-color: hsl(217, 19%, 24%);
+  transition: all 0.2s ease-in-out;
 
   position: relative;
 }
@@ -106,7 +112,7 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0 0rem 2.4rem hsl(150, 100%, 66%);
+  box-shadow: 0rem 0rem 2.4rem hsl(150, 100%, 66%);
 }
 
 .btn img {
