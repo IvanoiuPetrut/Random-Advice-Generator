@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(218, 23%, 16%);
+
+  position: relative;
+}
+
+.container {
+  /* position: relative; */
+  /* margin: 0 auto; */
+  padding: 0 3.2rem;
+}
+
+/* .allign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .vertically-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+.advice__box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+
+  max-width: 54rem;
+  /* width: clamp(100%, 54rem, 54rem); */
+  /* width: 100%; */
+  padding: 3.2rem;
+  border-radius: 11px;
+  background-color: hsl(217, 19%, 24%);
+
+  position: relative;
+}
+
+.heading--primary {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.advice__text {
+  color: hsl(193, 38%, 92%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.advice__divider {
+  margin-bottom: 2.8rem;
+}
+
+.btn {
+  border: none;
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0rem 2.4rem hsl(150, 100%, 66%);
+}
+
+.btn img {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+@media (max-width: 42em) {
+  .advice__wrapper {
+  }
+}
