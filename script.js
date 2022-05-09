@@ -12,13 +12,9 @@ window.onload = () => {
 };
 
 const adviceUrl = "https://api.adviceslip.com/advice";
-const controller = new AbortController();
-const timeoutId = setTimeout(() => controller.abort(), 2500);
 
 function getAdvice() {
-  fetch(adviceUrl, {
-    signal: controller.signal,
-  })
+  fetch(adviceUrl)
     .then((response) => {
       return response.json();
     })
