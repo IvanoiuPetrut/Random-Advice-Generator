@@ -1,11 +1,14 @@
-var btn = document.querySelector("button");
-var p = document.querySelector("p");
-var h1 = document.querySelector("h1");
-let ct = 100;
+const adviceBtn = document.querySelector("#advice-btn");
+const adviceText = document.querySelector("#advice-text");
+const adviceNumber = document.querySelector("#advice-number");
 
-btn.addEventListener("click", function () {
+adviceBtn.addEventListener("click", function () {
   getAdvice();
 });
+
+window.onload = () => {
+  getAdvice();
+};
 
 function getAdvice() {
   fetch("https://api.adviceslip.com/advice")
@@ -14,7 +17,8 @@ function getAdvice() {
     })
     .then((data) => {
       const adviceObj = data.slip;
-      p.textContent = adviceObj.advice;
+      adviceText.textContent = `“${adviceObj.advice}”`;
+      adviceNumber.textContent = `Advice #${adviceObj.id}`;
     })
     .catch((error) => {
       console.log(error);
