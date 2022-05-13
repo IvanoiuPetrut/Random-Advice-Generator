@@ -12,6 +12,7 @@ Challange from Frontend Mentor.
 <p align="center">
 [Live Server here](https://ivanoiupetrut.github.io/Random-Advice-Generator/)
 </p>
+[Link to Google](https://www.google.com)
 
 ## Features
 
