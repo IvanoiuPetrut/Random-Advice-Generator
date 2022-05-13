@@ -20,5 +20,7 @@ Challange from Frontend Mentor.
 
 ## Technology:
 
-- HTML, CSS, JS
+- HTML5
+- CSS3
+- JavaScript
 - API - Advice Slip JSON API
