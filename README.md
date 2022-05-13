@@ -10,7 +10,7 @@ Challange from Frontend Mentor.
 <br>
 
 <p align="center">
-  <a href="https://ivanoiupetrut.github.io/Random-Advice-Generator/">Live server here</a>
+  <a href="https://ivanoiupetrut.github.io/Random-Advice-Generator/" target="_blank">Live server here</a>
 </p>
 
 ## Features
